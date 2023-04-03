@@ -36,9 +36,9 @@ sudo wget -cO - 'https://code.visualstudio.com/sha/download?build=stable&os=linu
 sudo wget 'https://download.typora.io/linux/typora_1.4.1-dev_amd64.deb' &&
 sudo wget 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb' &&
 sudo wget 'https://download-installer.cdn.mozilla.net/pub/devedition/releases/112.0b9/linux-x86_64/es-ES/firefox-112.0b9.tar.bz2' &&
-sudo gdebi google-chrome-stable_current_amd64.deb -y &&
-sudo gdebi visualCode.deb -y &&
-sudo gdebi typora_1.4.1-dev_amd64.deb -y &&
+sudo gdebi google-chrome-stable_current_amd64.deb &&
+sudo gdebi visualCode.deb &&
+sudo gdebi typora_1.4.1-dev_amd64.deb &&
 sudo apt install git gitk -y &&
 cd .. &&
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh &&
@@ -58,6 +58,7 @@ sudo touch ~/.local/share/applications/firefox_dev.desktop &&
 sudo echo -e "[Desktop Entry]\nName=Firefox Developer\nGenericName=Firefox Developer Edition"\n"Exec=/opt/firefox/firefox %u\nTerminal=false\nIcon=/opt/firefox/browser/chrome/icons/default/default128.png\nType=Application\nCategories=Application;Network;X-Developer;\nComment=Firefox Developer Edition Web Browser.\nStartupWMClass=Firefox Developer Edition" | sudo tee ~/.local/share/applications/firefox_dev.desktop &&
 sudo chmod +x ~/.local/share/applications/firefox_dev.desktop &&
 cd
+
 
 
 
