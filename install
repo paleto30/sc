@@ -34,4 +34,6 @@ sudo systemctl status apache2
 
 https://blog.ahierro.es/archivos-y-permisos-de-usuario-en-apache-y-linux/
 
+sudo chown -R spukm01-081 /var/www/html/SpukM01-081
+
 ////////////////////////////////////
