@@ -1,0 +1,47 @@
+sudo apt-get install gdebi curl htop python3-pip -y
+
+discord en App
+obs en App - PERMISOS
+
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc
+
+nvm list-remote
+nvm install v18.15.0
+nvm use v18.15.0
+
+cd Downloads 
+
+sudo wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
+sudo wget https://download.typora.io/linux/typora_1.4.1-dev_amd64.deb
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo gdebi google-chrome-stable_current_amd64.deb
+sudo gdebi code_1.77.0-1680085573_amd64.deb
+sudo gdebi typora_1.4.1-dev_amd64.deb
+sudo apt install git gitk-y
+
+
+
+
+// Concatenado
+
+
+sudo apt-get install gdebi curl htop python3-pip -y && 
+cd Downloads &&
+sudo wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 &&
+sudo wget https://download.typora.io/linux/typora_1.4.1-dev_amd64.deb &&
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
+sudo gdebi google-chrome-stable_current_amd64.deb -y &&
+sudo gdebi code_1.77.0-1680085573_amd64.deb -y &&
+sudo gdebi typora_1.4.1-dev_amd64.deb -y &&
+sudo apt install git gitk -y &&
+cd .. &&
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh &&
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash &&
+source ~/.bashrc &&
+nvm list-remote &&
+nvm install v18.15.0 &&
+nvm use v18.15.0
+
+
