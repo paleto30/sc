@@ -32,4 +32,6 @@ sudo ufw allow 'Apache'
 sudo ufw enable
 sudo systemctl status apache2
 
+https://blog.ahierro.es/archivos-y-permisos-de-usuario-en-apache-y-linux/
+
 ////////////////////////////////////
