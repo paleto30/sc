@@ -54,7 +54,7 @@ sudo tar xjf firefox-112.0b9.tar.bz2 &&
 sudo rm -rf firefox-112.0b9.tar.bz2 &&
 sudo chown -R $USER /opt/firefox/ &&
 sudo touch ~/.local/share/applications/firefox_dev.desktop &&
-sudo echo "[Desktop Entry]\nName=Firefox Developer\nGenericName=Firefox Developer Edition\nExec=/opt/firefox/firefox %u\nTerminal=false\nIcon=/opt/firefox/browser/chrome/icons/default/default128.png\nType=Application\nCategories=Application;Network;X-Developer;\nComment=Firefox Developer Edition Web Browser.\nStartupWMClass=Firefox Developer Edition" | tee ~/.local/share/applications/firefox_dev.desktop &&
+sudo echo "[Desktop Entry]\nName=Firefox Developer\nGenericName=Firefox Developer Edition\nExec=/opt/firefox/firefox %u\nTerminal=false\nIcon=/opt/firefox/browser/chrome/icons/default/default128.png\nType=Application\nCategories=Application;Network;X-Developer;\nComment=Firefox Developer Edition Web Browser.\nStartupWMClass=Firefox Developer Edition" | sudo tee ~/.local/share/applications/firefox_dev.desktop &&
 sudo chmod +x ~/.local/share/applications/firefox_dev.desktop
 
 
