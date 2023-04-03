@@ -32,7 +32,7 @@ sudo apt-get install curl -y &&
 sudo apt-get install htop -y &&
 sudo apt-get install python3-pip -y && 
 
-sudo wget -cO -'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' > visualCode.deb &&
+sudo wget -cO - 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' > visualCode.deb &&
 sudo wget 'https://download.typora.io/linux/typora_1.4.1-dev_amd64.deb' &&
 sudo wget 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb' &&
 sudo wget 'https://download-installer.cdn.mozilla.net/pub/devedition/releases/112.0b9/linux-x86_64/es-ES/firefox-112.0b9.tar.bz2' &&
@@ -46,7 +46,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash 
 source ~/.bashrc &&
 nvm list-remote &&
 nvm install v18.15.0 &&
-nvm use v18.15.0
+nvm use v18.15.0 &&
 
 cd Downloads &&
 sudo cp -rp firefox-112.0b9.tar.bz2 /opt/ &&
