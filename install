@@ -23,3 +23,5 @@ sudo gdebi code_1.77.0-1680085573_amd64.deb
 sudo gdebi typora_1.4.1-dev_amd64.deb
 
 sudo apt install git gitk-y
+
+aaaa
