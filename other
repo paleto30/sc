@@ -32,9 +32,9 @@ sudo apt-get install curl -y &&
 sudo apt-get install htop -y &&
 sudo apt-get install python3-pip -y && 
 cd Downloads &&
-sudo wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 &&
-sudo wget https://download.typora.io/linux/typora_1.4.1-dev_amd64.deb &&
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &&
+sudo wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' &&
+sudo wget 'https://download.typora.io/linux/typora_1.4.1-dev_amd64.deb' &&
+sudo wget 'https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb' &&
 sudo wget 'https://download-installer.cdn.mozilla.net/pub/devedition/releases/112.0b9/linux-x86_64/es-ES/firefox-112.0b9.tar.bz2' &&
 sudo gdebi google-chrome-stable_current_amd64.deb -y &&
 sudo gdebi code_1.77.0-1680085573_amd64.deb -y &&
