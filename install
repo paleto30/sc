@@ -25,15 +25,30 @@ sudo gdebi typora_1.4.1-dev_amd64.deb
 sudo apt install git gitk-y
 
 
-///////Apache en construcion///////
+///////Apache///////
 
 sudo apt install apache2
 sudo ufw allow 'Apache'
 sudo ufw enable
 sudo systemctl status apache2
 
-https://blog.ahierro.es/archivos-y-permisos-de-usuario-en-apache-y-linux/
+cd /var/www/html/
+sudo mkdir SpukM01-081 SpukM02-081 SpukT01-081 SpukT02-081 SpukN01-081
 
-sudo chown -R spukm01-081 /var/www/html/SpukM01-081
+sudo chown spukm01-081:spukm01-081 SpukM01-081
+sudo chmod u+rwx SpukM01-081
 
+sudo chown spukm02-081:spukm02-081 SpukM02-081
+sudo chmod u+rwx SpukM02-081
+
+sudo chown spukt01-081:spukt01-081 SpukT01-081
+sudo chmod u+rwx SpukT01-081
+
+sudo chown spukt02-081:spukt02-081 SpukT02-081
+sudo chmod u+rwx SpukT02-081
+
+sudo chown spukn01-081:spukn01-081 SpukN01-081
+sudo chmod u+rwx SpukN01-081
+
+Nota: -081 hace referencia al numero del inventario del PC, cambiarlo al correspondiente de cada equipo :) 'OJO'
 ////////////////////////////////////
