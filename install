@@ -24,4 +24,12 @@ sudo gdebi typora_1.4.1-dev_amd64.deb
 
 sudo apt install git gitk-y
 
-aaaa
+
+///////Apache en construcion///////
+
+sudo apt install apache2
+sudo ufw allow 'Apache'
+sudo ufw enable
+sudo systemctl status apache2
+
+////////////////////////////////////
