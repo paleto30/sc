@@ -45,3 +45,15 @@ nvm install v18.15.0 &&
 nvm use v18.15.0
 
 
+// Instalar Firefox Dev
+
+cd Downloads/  &&
+sudo wget https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=es-ES&_gl=1*pr0o22*_ga*MTYyNzY2OTM0MC4xNjgwNTQwNTc2*_ga_MQ7767QQQW*MTY4MDU0NTM2Mi4yLjAuMTY4MDU0NTM2Mi4wLjAuMA.. &&
+sudo cp -rp firefox-112.0b9.tar.bz2 /opt/ &&
+cd /opt/ &&
+sudo tar xjf firefox-112.0b9.tar.bz2 &&
+sudo rm -rf firefox-112.0b9.tar.bz2 &&
+sudo chown -R $USER /opt/firefox/ &&
+sudo touch ~/.local/share/applications/firefox_dev.desktop &&
+echo "[Desktop Entry]\nName=Firefox Developer\nGenericName=Firefox Developer Edition\nExec=/opt/firefox/firefox %u\nTerminal=false\nIcon=/opt/firefox/browser/chrome/icons/default/default128.png\nType=Application\nCategories=Application;Network;X-Developer;\nComment=Firefox Developer Edition Web Browser.\nStartupWMClass=Firefox Developer Edition" > ~/.local/share/applications/firefox_dev.desktop &&
+sudo chmod +x ~/.local/share/applications/firefox_dev.desktop
