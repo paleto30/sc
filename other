@@ -27,7 +27,10 @@ sudo apt install git gitk-y
 // Concatenado
 
 
-sudo apt-get install gdebi curl htop python3-pip -y && 
+sudo apt-get install gdebi -y &&
+sudo apt-get install curl -y &&
+sudo apt-get install htop -y &&
+sudo apt-get install python3-pip -y && 
 cd Downloads &&
 sudo wget https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 &&
 sudo wget https://download.typora.io/linux/typora_1.4.1-dev_amd64.deb &&
