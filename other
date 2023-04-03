@@ -46,7 +46,7 @@ nvm use v18.15.0
 
 //Instalar Firefox
 
-cd Downloads/  &&
+cd Downloads  &&
 sudo wget https://download.mozilla.org/?product=firefox-devedition-latest-ssl&os=linux64&lang=es-ES&_gl=1*pr0o22*_ga*MTYyNzY2OTM0MC4xNjgwNTQwNTc2*_ga_MQ7767QQQW*MTY4MDU0NTM2Mi4yLjAuMTY4MDU0NTM2Mi4wLjAuMA.. &&
 sudo cp -rp firefox-112.0b9.tar.bz2 /opt/ &&
 cd /opt/ &&
